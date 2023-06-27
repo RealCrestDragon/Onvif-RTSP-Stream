@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <canvas id="canvas"></canvas>
+  </body>
+
+  <script type="text/javascript" src="jsmpeg.min.js"></script>
+  <script type="text/javascript">
+    var canvas = document.getElementById("canvas");
+    canvas.style.height = "100vh";
+    canvas.style.width = "100vw";
+    canvas.style.objectFit = "contain";
+
+    player = new JSMpeg.Player("ws://192.168.31.89:9999", {
+      canvas,
+    });
+  </script>
+</html>
